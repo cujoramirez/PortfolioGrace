@@ -6,7 +6,8 @@ export default function Footer() {
   return (
     <footer id="contact" className="bg-gradient-to-b from-white to-gray-50 border-t border-gray-100">
       {/* Main Footer Content */}
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-10 py-16 md:py-24 lg:py-32 md:ml-[300px]">
+      <div className="w-full py-16 md:py-24 lg:py-32 px-4 sm:px-6 lg:px-10">
+        <div className="flex flex-col items-center justify-center">
         
         {/* Header Section - Centered */}
         <motion.div 
@@ -14,12 +15,12 @@ export default function Footer() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-12 md:mb-20 flex flex-col items-center"
+          className="text-center mb-12 md:mb-20 flex flex-col items-center w-full"
         >
           <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium bg-gradient-to-r from-gray-900 via-gray-700 to-gray-900 bg-clip-text text-transparent mb-4 md:mb-6">
             Let's Connect
           </h2>
-          <p className="text-gray-500 text-base sm:text-lg md:text-xl max-w-2xl mx-auto leading-relaxed text-center px-2">
+          <p className="text-gray-500 text-base sm:text-lg md:text-xl max-w-2xl leading-relaxed text-center px-2">
             I'm always excited to discuss new projects, creative ideas, or opportunities to collaborate.
           </p>
         </motion.div>
@@ -37,7 +38,7 @@ export default function Footer() {
             {/* Email */}
             <motion.div 
               whileHover={{ backgroundColor: 'rgba(233, 69, 96, 0.03)' }}
-              className="w-full md:w-72 px-6 md:px-8 py-6 md:py-10 flex flex-col items-center justify-center gap-2 md:gap-3 transition-colors duration-300"
+              className="flex-1 px-6 md:px-8 py-6 md:py-10 flex flex-col items-center justify-center gap-2 md:gap-3 transition-colors duration-300"
             >
               <p className="text-xs font-bold text-gray-400 uppercase tracking-widest text-center">Email</p>
               <a 
@@ -51,7 +52,7 @@ export default function Footer() {
             {/* Phone */}
             <motion.div 
               whileHover={{ backgroundColor: 'rgba(233, 69, 96, 0.03)' }}
-              className="w-full md:w-72 px-6 md:px-8 py-6 md:py-10 flex flex-col items-center justify-center gap-2 md:gap-3 transition-colors duration-300"
+              className="flex-1 px-6 md:px-8 py-6 md:py-10 flex flex-col items-center justify-center gap-2 md:gap-3 transition-colors duration-300"
             >
               <p className="text-xs font-bold text-gray-400 uppercase tracking-widest text-center">Phone</p>
               <a 
@@ -65,7 +66,7 @@ export default function Footer() {
             {/* LinkedIn */}
             <motion.div 
               whileHover={{ backgroundColor: 'rgba(233, 69, 96, 0.03)' }}
-              className="w-full md:w-72 px-6 md:px-8 py-6 md:py-10 flex flex-col items-center justify-center gap-2 md:gap-3 transition-colors duration-300"
+              className="flex-1 px-6 md:px-8 py-6 md:py-10 flex flex-col items-center justify-center gap-2 md:gap-3 transition-colors duration-300"
             >
               <p className="text-xs font-bold text-gray-400 uppercase tracking-widest text-center">LinkedIn</p>
               <a 
@@ -98,12 +99,13 @@ export default function Footer() {
            GMG<span className="text-[#e94560]">.</span>
           </motion.span>
         </motion.div>
+        </div>
         
       </div>
 
       {/* Bottom Bar */}
       <div className="border-t border-gray-100 bg-gray-50">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-10 py-4 md:py-6 md:ml-[300px]">
+        <div className="w-full py-4 md:py-6 px-4 sm:px-6 lg:px-10">
           <p className="text-center text-xs sm:text-sm text-gray-500">
             © {new Date().getFullYear()} {personalInfo.name}. All rights reserved.
           </p>
