@@ -89,8 +89,8 @@ export default function Navbar() {
           }`}
         />
         
-        <div className="relative w-full max-w-6xl mx-auto px-4 md:px-8 lg:px-16 md:ml-[300px]">
-          <div className="flex items-center justify-between h-14 md:ml-[-250px]">
+        <div className="relative w-full max-w-6xl mx-auto px-4 md:px-8 lg:px-16">
+          <div className="flex items-center justify-between h-14">
             {/* Logo */}
             <motion.button
               onClick={() => scrollToSection('home')}
